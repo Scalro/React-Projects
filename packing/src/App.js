@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const dataSet = [
+  { id: 1, product: "Towel", quantity: "2" },
+  { id: 2, product: "Toothbrush", quantity: "1" },
+  { id: 3, product: "Bed-Sheet", quantity: "3" },
+];
+export default function App() {
+  <div>
+    <Title />
+    <Form />
+    <List />
+    <Foot />
+  </div>;
 }
 
-export default App;
+function Title() {
+  <h1> Header</h1>;
+}
+
+function Form() {
+  <h3>Yes you are in</h3>;
+}
+
+function List() {
+  <div>
+    {dataSet.map()} <Item />
+  </div>;
+}
+
+function Item() {}
+
+function Foot() {
+  <footer>Bottom Line</footer>;
+}
